@@ -410,22 +410,14 @@ body {
 #es-rc #es-rc-content [data-es-rc] .es-cross__btn {
   background-color: #e85400;
   color: #FFF;
-  padding: 0.3rem;
+  padding: 0.5rem;
   display: block;
   text-align: center;
-  width: 150px;
   margin: auto;
   transition: all 300ms ease-in-out;
-  cursor: pointer;
   font-style: italic;
   font-weight: 700;
   font-size: 1.3rem;
-  animation: es-pulse--btn 2s infinite;
-}
-#es-rc #es-rc-content [data-es-rc] .es-cross__btn:hover {
-  background-color: #FFF;
-  outline: 3px solid #e85400;
-  color: #e85400;
 }
 @media (min-width: 576px) {
   #es-rc #es-rc-content [data-es-rc] .es-cross__btn {
@@ -1153,29 +1145,15 @@ body {
   font-weight: 500;
   transition: all 200ms ease-in-out;
 }
-#es-rc #es-rc-content [data-es-rc] .es-table__link--orange:hover {
-  background-color: #fc7e00;
-  border: 2px solid #fc7e00;
-  color: #FFF;
+#es-rc #es-rc-content [data-es-rc] .es-table__link--orange {
+  border-radius: unset;
 }
-#es-rc #es-rc-content [data-es-rc] .es-table__link--red:hover {
-  background-color: #92250b;
-  border: 2px solid #92250b;
-  color: #FFF;
+#es-rc #es-rc-content [data-es-rc] .es-table__link--red {
+  border-radius: unset;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__link--green:hover {
   background-color: #425505;
   border: 2px solid #425505;
-  color: #FFF;
-}
-#es-rc #es-rc-content [data-es-rc] .es-table__link--orange:active {
-  background-color: #c96602;
-  border: 2px solid #c96602;
-  color: #FFF;
-}
-#es-rc #es-rc-content [data-es-rc] .es-table__link--red:active {
-  background-color: #691c09;
-  border: 2px solid #691c09;
   color: #FFF;
 }
 #es-rc #es-rc-content [data-es-rc] .es-table__link--green:active {

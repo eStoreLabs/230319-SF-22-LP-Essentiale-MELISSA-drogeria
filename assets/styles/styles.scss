@@ -432,11 +432,16 @@ body {
         }
 
         &__btn {
-            @include es-button;
+            background-color: $es-color--orange;
+            color: #FFF;
+            padding: 0.5rem;
+            display: block;
+            text-align: center;
+            margin: auto;
+            transition: all 300ms ease-in-out;
             font-style: italic;
             font-weight: 700;
             font-size: 1.3rem;
-            animation: es-pulse--btn 2s infinite;
 
             @media (min-width: 576px) {
                 font-size: 1.1rem;
@@ -766,28 +771,30 @@ body {
 
         &__resetBtn {
             @include es-button--quiz($es-color--red);
-            margin-top: -50px!important;
+            margin-top: -50px !important;
             display: block;
             margin: auto;
             position: relative;
             z-index: 2;
             width: 200px;
             border: 3px solid $es-color--red;
+
             &:hover {
-                 background-color: #FFF;
-                 color: $es-color--red;
-                 border: 3px solid $es-color--red;
-             }
+                background-color: #FFF;
+                color: $es-color--red;
+                border: 3px solid $es-color--red;
+            }
 
 
             @media (min-width: 576px) {
                 width: 230px;
-                margin-top: -40px!important;
+                margin-top: -40px !important;
             }
+
             @media (min-width: 757px) {
-                margin-top: -60px!important;
+                margin-top: -60px !important;
             }
-        }  
+        }
     }
 
     @media (min-width: 576px) {
@@ -1118,33 +1125,16 @@ body {
             font-weight: 500;
             transition: all 200ms ease-in-out;
 
-            &--orange:hover {
-                background-color: #fc7e00;
-                border: 2px solid #fc7e00;
-                color: #FFF;
-            }
-
-            &--red:hover {
-                background-color: #92250b;
-                border: 2px solid #92250b;
-                color: #FFF;
-            }
+           &--orange {
+            border-radius: unset;
+           }
+           &--red {
+            border-radius: unset;
+           }
 
             &--green:hover {
                 background-color: #425505;
                 border: 2px solid #425505;
-                color: #FFF;
-            }
-
-            &--orange:active {
-                background-color: #c96602;
-                border: 2px solid #c96602;
-                color: #FFF;
-            }
-
-            &--red:active {
-                background-color: #691c09;
-                border: 2px solid #691c09;
                 color: #FFF;
             }
 
